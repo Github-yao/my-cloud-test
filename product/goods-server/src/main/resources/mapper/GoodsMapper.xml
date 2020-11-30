@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mycloud.goodsserver.dao.GoodsMapper">
+    <resultMap id="BaseResultMap" type="com.mycloud.goodsapi.pojo.GoodsInfo">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="goods_code" jdbcType="VARCHAR" property="goodsCode" />
+        <result column="goods_name" jdbcType="VARCHAR" property="goodsName" />
+        <result column="goods_barcode" jdbcType="VARCHAR" property="goodsBarcode" />
+        <result column="brand_code" jdbcType="VARCHAR" property="brandCode" />
+        <result column="goods_short" jdbcType="VARCHAR" property="goodsShort" />
+        <result column="category_code" jdbcType="VARCHAR" property="categoryCode" />
+        <result column="goods_unit" jdbcType="VARCHAR" property="goodsUnit" />
+        <result column="specify" jdbcType="VARCHAR" property="specify" />
+        <result column="shelf_life" jdbcType="INTEGER" property="shelfLife" />
+        <result column="storage" jdbcType="VARCHAR" property="storage" />
+        <result column="default_price" jdbcType="DECIMAL" property="defaultPrice" />
+        <result column="goods_desc" jdbcType="VARCHAR" property="goodsDesc" />
+        <result column="goods_note" jdbcType="VARCHAR" property="goodsNote" />
+        <result column="category" jdbcType="INTEGER" property="category" />
+        <result column="address" jdbcType="VARCHAR" property="address" />
+        <result column="country" jdbcType="VARCHAR" property="country" />
+        <result column="operator" jdbcType="VARCHAR" property="operator" />
+        <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+        <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
+    </resultMap>
+
+
+
+
+</mapper>

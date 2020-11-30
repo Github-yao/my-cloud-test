@@ -1,0 +1,21 @@
+server:
+  port: 8088
+spring:
+  datasource:
+    url: jdbc:mysql://121.196.33.118:3306/product?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+  application:
+    name: goods
+
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**.xml
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+  instance:
+    prefer-ip-address: true
